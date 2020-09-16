@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- template admin -->
+    <definition name="admin.definition"
+                template="/WEB-INF/layouts/admin/layout.jsp">
+        <put-attribute name="head"
+                       value="/WEB-INF/layouts/admin/layout/head.jsp"/>
+        <put-attribute name="menu"
+                       value="/WEB-INF/layouts/admin/layout/menu.jsp"/>
+        <put-attribute name="side"
+                       value="/WEB-INF/layouts/admin/layout/footer.jsp"/>
+        <put-attribute name="body" value=""/>
+    </definition>
+
+
+
+    <definition name="admin/*" extends="admin.definition">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/admin/{1}.jsp"/>
+    </definition>
+    <definition name="admin/news/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/news/{1}.jsp"></put-attribute>
+    </definition>
+    <definition name="admin/borrow-lockers/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/borrow-lockers/{1}.jsp"></put-attribute>
+    </definition>
+    <definition name="admin/tracking/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/tracking/{1}.jsp"></put-attribute>
+    </definition>
+    <definition name="admin/lockers/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/lockers/{1}.jsp"></put-attribute>
+    </definition>
+    <definition name="admin/user/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/user/{1}.jsp"></put-attribute>
+    </definition>
+    <definition name="admin/person-info/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/person-info/{1}.jsp"></put-attribute>
+    </definition>
+
+</tiles-definitions>
