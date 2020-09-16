@@ -13,10 +13,10 @@
                     <div class="w-100 ">
                         <a href="/consignment/personal-infomation" class="" style="margin-right: 130px"><i class="fa fa-info-circle"></i> Thông tin </a>
                     </div>
-                    <form id="formEdit">
+                    <form id="formEditPassword">
                         <div class="col-sm-12 mt-3 form-group">
                             <label class="ward input-label col-md-4 text-right">Mật khẩu cũ:</label>
-                            <input class="form-control col-md-4 fullName" type="password" required name="password"
+                            <input class="form-control col-md-4 " type="password" required name="password"
                                    id="password">
                         </div>
                         <div class="col-sm-12 mt-3 form-group">
@@ -28,8 +28,10 @@
                             <label class="ward input-label col-md-4 text-right">Nhập lại mật khẩu mới:</label>
                             <input class="form-control col-md-4 email" type="password" required name="passwordRepeated"
                                    id="passwordRepeated">
-                        </div>
 
+
+                        </div>
+                        <span class="alert " id="alert" style="color: red;display: none">Mật khẩu không khớp</span>
 
                         <div class="col-sm-12 mt-3 form-group text-center" style="height: 46px;margin-left: 70px">
                             <div class="col-md-6 text-right">

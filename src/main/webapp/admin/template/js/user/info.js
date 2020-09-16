@@ -86,5 +86,39 @@ jQuery(function ($) {
             });
 
         }
+        $('#formEditPassword').on('submit',function (e) {
+            e.preventDefault();
+            var formData = $('#formEditPassword').serializeArray();
+            var data = {};
+            $.each(formData, function (i, v) {
+                data[v.name] = v.value;
+            });
+            console.log(data)
+            if (data.passwordChange!=data.passwordRepeated){
+                $('#alert').css("display","block");
+                throw "fail";
+            }
+            $.ajax({
+                type: "PUT",
+                url: "/api/consignment/user/change-password",
+                headers: {"Authorization": "Bearer " + localStorage.getItem('consignment_token')},
+                data: JSON.stringify(data),
+                dataType: "json",
+                contentType: "application/json",
+                beforeSend: function () {
+                    $('.loader').css("display", "block");
+
+                },
+                success: function (response) {
+
+                    alert(response.message);
+                    window.location.href="/consignment/login";
+                    $('.loader').css("display", "none");
+                }, error: function (response) {
+                    $('.loader').css("display", "none");
+                    alert(response.responseJSON.message);
+                }
+            });
+        })
     })
 })
