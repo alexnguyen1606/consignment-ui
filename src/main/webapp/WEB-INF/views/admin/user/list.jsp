@@ -38,7 +38,7 @@
                 </div>
 
 
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" >
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
@@ -55,6 +55,7 @@
                     <div class="col-sm-12 col-xs-12 mr-auto ml-auto">
                         <ul id="pagination-test" class="pagination "></ul>
                     </div>
+                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm thấy thông tin</h3></div>
                 </div>
 
             </div>

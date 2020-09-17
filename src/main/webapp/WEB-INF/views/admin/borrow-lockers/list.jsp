@@ -94,6 +94,7 @@
                     <div class="col-sm-12 col-xs-12 mr-auto ml-auto">
                         <ul id="pagination-test" class="pagination "></ul>
                     </div>
+                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm thấy thông tin</h3></div>
                 </div>
 
             </div>
@@ -117,25 +118,25 @@
                             <input type="hidden" name="id" id="borrowLockersId" value="">
                             <div class=" col-md-6  form-group ">
                                 <label class=" text-left col-md-12 ">Mã bảo hiểm: <span
-                                        class="insuranceCode">145732267</span></label>
+                                        class="insuranceCode"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12  ">CMND: <span
-                                        class="numberIdentify">145732267</span></label>
+                                        class="numberIdentify"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12  ">Họ và tên: <span
-                                        class="fullName">Nguyễn Anh Tuấn</span></label>
+                                        class="fullName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12  ">Time-in: <span
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span class="lockersName">csc</span></label>
+                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Người tiếp nhận bảo hiểm: <span class="userName">Bùi Bình An</span></label>
+                                <label class="  text-left col-md-12 ">Người tiếp nhận bảo hiểm: <span class="userName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="text-left col-md-3 ">Ghi chú: </label>

@@ -22,7 +22,13 @@
                                     class="fa fa-plus-circle mr-1"></i>Thêm mới hộp lưu trữ
                             </button>
                         </div>
-
+                        <div class="col-md-2">
+                            <select class="form-control  input-search lockers" value="" name="isActive">
+                                <option value="">Trạng thái</option>
+                                <option value="false">Khóa</option>
+                                <option value="true">Mở</option>
+                            </select>
+                        </div>
                         <div class=" col-md-2  ">
                             <input class="form-control  input-search" placeholder="Tìm kiếm" value=""
                                    name="textSearch">
@@ -33,14 +39,14 @@
                 </form>
 
 
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5 " >
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
                             <th class="text-left ">Mã hộp</th>
                             <th width="30%" class="text-left">Tên hộp</th>
                             <th class="text-center">Trạng thái</th>
-
+                            <th class="text-left">Số lượng bảo hiểm cất trữ</th>
                             <th class="text-left">Thao tác</th>
                         </tr>
                         </thead>
@@ -51,6 +57,7 @@
                     <div class="col-sm-12 col-xs-12 mr-auto ml-auto">
                         <ul id="pagination-test" class="pagination "></ul>
                     </div>
+                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm thấy thông tin</h3></div>
                 </div>
 
             </div>

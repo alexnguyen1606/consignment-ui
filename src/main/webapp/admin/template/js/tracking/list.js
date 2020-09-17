@@ -19,32 +19,34 @@ jQuery(function ($) {
                     $('#pagination-test').unbind("page");
                 },
                 success: function (response) {
-                    if (response.totalPage>0){
+                    $('.loader').css("display", "none");
+                    if (response.totalPage > 0) {
                         paging(response.totalPage, response.currentPage);
                     }
                     loadLoging(response.data);
 
-                    $('.loader').css("display", "none");
                 }, error: function (response) {
                     $('.loader').css("display", "none");
 
                 }
             })
         };
+
         function loadLoging(data) {
             var row = "";
             $.each(data, function (i, v) {
                 var type = "";
-                if (v.type=="CHECK_IN"){
-                    type="Nhận bảo hiểm"
-                } else if(v.type=="CHECK_OUT"){
-                    type="Trả bảo hiểm"
+                if (v.type == "CHECK_IN") {
+                    type = "Nhận bảo hiểm"
+                } else if (v.type == "CHECK_OUT") {
+                    type = "Trả bảo hiểm"
                 }
                 var date = new Date(v.createdDate);
                 var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
                 row += "<tr style='border-radius: 5px;'>";
                 row += "<td>" + type + "</td>"
-                row += "<td>" + v.customer.insuranceCode + "</td>";;
+                row += "<td>" + v.customer.insuranceCode + "</td>";
+                ;
                 row += "<td>" + v.customer.numberIdentify + "</td>";
 
                 row += "<td>" + v.customer.fullName + "</td>";
@@ -55,7 +57,14 @@ jQuery(function ($) {
             });
             $('#tableLogging').empty();
             $('#tableLogging').append(row);
+            if (data.length == 0) {
+                $('#no-content').css("display", "block")
+            } else {
+                $('#no-content').css("display", "none")
+
+            }
         }
+
         function getDataSearch() {
             var formData = $('#formSearch').serializeArray();
             var data = {};
@@ -64,6 +73,7 @@ jQuery(function ($) {
             });
             return data;
         }
+
         function paging(totalPage, currentPages) {
             $('#pagination-test').twbsPagination({
                 totalPages: totalPage,
@@ -90,12 +100,13 @@ jQuery(function ($) {
                 }
             });
         }
+
         getLog("");
         $('#formSearch').on('submit', function (e) {
             e.preventDefault();
             getLog("");
         });
-        $(document).on('click','.btn-detail',function () {
+        $(document).on('click', '.btn-detail', function () {
             var id = $(this).attr("data-id");
             $.ajax({
                 type: "GET",

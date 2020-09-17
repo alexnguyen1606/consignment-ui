@@ -36,13 +36,14 @@ jQuery(function ($) {
                     $('#pagination-test').unbind("page");
                 },
                 success: function (response) {
+                    $('.loader').css("display", "none");
                     loadBorrow(response.data);
-                    if(response.totalPage>0){
+                    if (response.totalPage > 0) {
                         paging(response.totalPage, response.currentPage);
 
                     }
 
-                    $('.loader').css("display", "none");
+
                 }, error: function (response) {
                     $('.loader').css("display", "none");
 
@@ -95,6 +96,12 @@ jQuery(function ($) {
             });
             $('#tableBorrow').empty();
             $('#tableBorrow').append(row);
+            if (data.length == 0) {
+                $('#no-content').css("display", "block")
+            } else {
+                $('#no-content').css("display", "none")
+
+            }
         }
 
         $('#insuranceCode').on("change", function () {

@@ -19,12 +19,11 @@ jQuery(function ($) {
                     $('#pagination-test').unbind("page");
                 },
                 success: function (response) {
+                    $('.loader').css("display", "none");
                     if (response.totalPage > 0) {
                         paging(response.totalPage, response.currentPage);
                     }
                     loadLocker(response.data);
-
-                    $('.loader').css("display", "none");
                 }, error: function (response) {
                     $('.loader').css("display", "none");
 
@@ -45,11 +44,18 @@ jQuery(function ($) {
                 row += '<td>'+v.code+'</td>';
                 row += '<td>'+v.name+'</td>';
                 row += '<td class="text-center">'+active+'</td>';
+                row += '<td class="text-center">'+v.totalBorrowed+'</td>';
                 row += '<td class="text-center"><div class="d-flex text-center"><div class="edit text-center mr-3" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật"><img src="/admin/image/Frame.svg"></div>';
                 row += "</tr>"
             });
             $('#tableLock').empty();
             $('#tableLock').append(row);
+            if (data.length==0){
+                $('#no-content').css("display","block")
+            } else {
+                $('#no-content').css("display", "none")
+
+            }
         }
 
         function getDataSearch() {

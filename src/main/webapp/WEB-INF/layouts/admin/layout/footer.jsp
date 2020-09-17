@@ -32,10 +32,10 @@
                 <li class="nav-item text-center pt-2" style="">
                     <a href="/consignment/personal-infomation">
                         <img class="img-circle avatar" style="width:80px;height: 80px "  src="">
-                        <a  class=" menu-item   ">
+                        <p  class=" menu-item   ">
 
                             <p class="fullName" ></p>
-                        </a>
+                        </p>
                     </a>
 
 

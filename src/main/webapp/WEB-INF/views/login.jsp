@@ -40,7 +40,7 @@
                 <input type="password" class="form-control form-input mt-2 ml-4 mr-4" pattern="[a-zA-Z0-9]+" title="Chỉ bao gồm chữ và số" id="password" name="password" placeholder="Mật khẩu">
             </div>
         </form>
-        <button type="submit" class="btn  mx-auto btn-login mt-4" style="" id="login">Đăng nhập</button>
+        <button type="button" class="btn  mx-auto btn-login mt-4" style="" id="login">Đăng nhập</button>
         <div class="position-absolute position-cover spin display-none">
             <div class="position-absolute position-center">
                 <div class="spinner-border" role="status">

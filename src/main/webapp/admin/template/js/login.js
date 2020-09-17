@@ -1,10 +1,11 @@
 $(document).ready(function () {
     $('#login').on('click',function() {
         login();
+        // $('#formLogin').trigger('submit');
 
     });
     $('#formLogin').on('submit',function (e) {
-        // e.preventDefault();
+        // e.preventDefault()
         // console.log("check")
         // login();
     });
