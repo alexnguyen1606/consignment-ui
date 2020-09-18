@@ -6,20 +6,20 @@
     <section class="content" style="background: white !important;">
 
         <div class="container text-center">
-            <div class="row  d-flex flex-column text-center mt-5">
+            <div class="row  justify-content-center text-center mt-5">
                 <div class="col-md-12">
                     <h2 style="">Thông tin cá nhân</h2>
                 </div>
-               <div class="col-md-12 mt-3 d-flex justify-content-between">
-                   <img class="avatar img-circle text-center" style="height: 80px;margin-left: 460px" src="">
+               <div class="col-md-12 mt-3 ">
+                   <img class="avatar img-circle text-center" style="height: 80px" src="">
                </div>
 
                 <div class=" col-md-12 mt-3">
                     <div class="w-100 ">
-                        <a href="/consignment/personal-infomation" class="" style="margin-right: 130px"><i class="fa fa-info-circle"></i> Thông tin </a>
+                        <a href="/consignment/personal-infomation" class="" style=""><i class="fa fa-info-circle"></i> Thông tin </a>
                     </div>
-                    <form id="formEditPassword">
-                        <div class="col-sm-12 mt-3 form-group">
+                    <form id="formEditPassword" class="col-md-12 ">
+                        <div class="col-sm-12 mt-3 form-group ">
                             <label class="ward input-label col-md-4 text-right">Mật khẩu cũ:</label>
                             <input class="form-control col-md-4 " type="password" required name="password"
                                    id="password">

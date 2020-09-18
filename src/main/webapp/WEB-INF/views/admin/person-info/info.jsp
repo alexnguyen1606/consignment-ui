@@ -11,8 +11,8 @@
                 <div class="col-md-12 ">
                     <h2 style="">Thông tin cá nhân</h2>
                 </div>
-               <div class="col-md-12 mt-3 d-flex justify-content-between">
-                   <img class="avatar img-circle text-center" style="height: 80px;margin-left: 460px" src="">
+               <div class="col-md-12 mt-3 ">
+                   <img class="avatar img-circle text-center" style="height: 80px;" src="">
                </div>
 
                 <div class=" col-md-12 mt-3">
@@ -21,9 +21,9 @@
                             <input type="file" id="avatarUpload" />
                             <i class="fa fa-upload primary" ></i> Đổi ảnh đại diện
                         </label>
-                        <a href="/consignment/personal-infomation/change-password" class="" style="margin-right: 130px"><img src="/admin/image/Group%20(1).png" > Đổi mật khẩu</a>
+                        <a href="/consignment/personal-infomation/change-password" class="" style=""><img src="/admin/image/Group%20(1).png" > Đổi mật khẩu</a>
                     </div>
-                    <form id="formEdit">
+                    <form id="formEdit" class="col-md-12">
                         <div class="col-sm-12 mt-3 form-group">
                             <label class="ward input-label col-md-4 text-right">Họ và tên:</label>
                             <input class="form-control col-md-4 fullName" type="" required name="fullName"
