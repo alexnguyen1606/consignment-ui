@@ -56,8 +56,8 @@ jQuery(function ($) {
                 row += "<td>" + v.username + "</td>";
                 row += "<td>" + v.email + "</td>";
                 row += "<td class='text-center'>" + active + "</td>";
-                row += '<td class="text-center"><div class="d-flex text-center"><div class="edit text-center mr-3" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật"><img src="/admin/image/Frame.svg"></div>';
-                row += '<div class="editRole text-center" data-id="' + v.id + '" data-toggle="modal" data-target="#modalRole"><a >Phân quyền</a></div>';
+                row += '<td class="text-center"><div class="d-flex justify-content-center text-center"><div class="edit text-center mr-3 mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật" style="cursor: pointer"><img src="/admin/image/Frame.svg"></div>';
+                row += '<div class="editRole text-center mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalRole"><a >Phân quyền</a></div>';
                 row += '<div class="resetPassword pl-2 text-center" data-id="' + v.id + '" ><a  >Reset mật khẩu</a></div>';
                 row += '</div></td>';
                 row += "</tr>"

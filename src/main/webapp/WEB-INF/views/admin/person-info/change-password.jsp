@@ -4,10 +4,15 @@
 
     <!-- Main content -->
     <section class="content" style="background: white !important;">
-        <h2 style=";margin-left: 400px;padding: 50px 150px;">Thông tin cá nhân</h2>
-        <div class="container">
-            <div class="row text-center">
-                <img class="avatar img-circle text-center" style="height: 80px;margin-left: 460px" src="">
+
+        <div class="container text-center">
+            <div class="row  d-flex flex-column text-center mt-5">
+                <div class="col-md-12">
+                    <h2 style="">Thông tin cá nhân</h2>
+                </div>
+               <div class="col-md-12 mt-3 d-flex justify-content-between">
+                   <img class="avatar img-circle text-center" style="height: 80px;margin-left: 460px" src="">
+               </div>
 
                 <div class=" col-md-12 mt-3">
                     <div class="w-100 ">

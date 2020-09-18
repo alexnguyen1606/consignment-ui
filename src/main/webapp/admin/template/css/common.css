@@ -125,3 +125,23 @@ input[type="file"] {
     width: 80px;
     height: 80px
 }
+.editRole{
+    width: 90px;
+}
+.editRole:hover{
+    background-color: #00A5EF;
+    border-radius: 5px;
+    color: #ffffff !important;
+    height: 23px;
+
+}
+.resetPassword{
+    text-align: center;
+    width: 120px;
+}
+.resetPassword:hover{
+    background-color:  #00D380;
+    border-radius: 5px;
+    color: #ffffff !important;
+    height: 23px;
+}

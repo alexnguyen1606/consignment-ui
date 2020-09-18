@@ -84,7 +84,8 @@ jQuery(function ($) {
             var row = "";
             $.each(data, function (i, v) {
                 var date = new Date(v.createdDate);
-                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
+                console.log(v.createdDate)
+                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
                 row += "<tr style='border-radius: 5px;'>";
                 row += "<td>" + v.insuranceCode + "</td>";
                 row += "<td>" + v.customer.numberIdentify + "</td>";

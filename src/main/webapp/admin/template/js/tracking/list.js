@@ -42,7 +42,7 @@ jQuery(function ($) {
                     type = "Trả bảo hiểm"
                 }
                 var date = new Date(v.createdDate);
-                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
+                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
                 row += "<tr style='border-radius: 5px;'>";
                 row += "<td>" + type + "</td>"
                 row += "<td>" + v.customer.insuranceCode + "</td>";

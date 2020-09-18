@@ -16,11 +16,11 @@
                 <div class="pt-3 pl-4 pb-3">
                     <span class=" text-uppercase form-label">Thêm mới thẻ</span>
                 </div>
-                <div class="col-md-12">
-                    <form class="row " id="formBorrow">
+                <%--<div class="col-md-12">--%>
+                    <form class="d-flex flex-container " id="formBorrow">
                         <input type="hidden" name="customerId" id="customerId">
-                        <div class="col-md-8 row">
-                            <div class=" col-md-5  form-group ">
+                        <div class="col-md-3 col-sm-6 d-flex flex-column">
+                            <div class=" col-md-12  form-group ">
                                 <label class=" text-right col-md-4 form-label ">Mã bảo hiểm:<span
                                         class="required" style="color: #e02222;">*</span></label>
                                 <input class="form-control input " value="" required name="insuranceCode"
@@ -28,34 +28,41 @@
                             </div>
 
 
-                            <div class=" col-md-5  form-group ">
+                            <div class=" col-md-12  form-group ">
                                 <label class=" text-right col-md-4 form-label ">CMND:<span
                                         class="required" style="color: #e02222;">*</span></label>
                                 <input class="form-control input " value="" required name="numberIdentify"
                                        id="numberIdentify">
                             </div>
-                            <div class=" col-md-5  form-group ">
+
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column">
+                            <div class=" col-md-12  form-group ">
                                 <label class=" text-right col-md-4 form-label ">Họ và tên:</label>
                                 <input class="form-control input " value="" name="fullName" id="fullName">
                             </div>
 
 
-                            <div class=" col-md-5  form-group ">
+                            <div class=" col-md-12 form-group ">
                                 <label class=" text-right col-md-4 form-label ">Nơi lưu trữ:</label>
                                 <select class="form-control input lockers" value="" name="lockersId" id="lockersId"></select>
 
                             </div>
-
                         </div>
-                        <div class="form-group col-md-4" style="position: absolute;left: auto;right: 222px;">
-                            <textarea class="input-textarea " placeholder="ghi chú" name="note" id="note" rows="4"
-                                      cols="50"></textarea>
-                            <button type="submit" class="btn  mx-auto btn-edit mt-4" style="" id="">Thêm mới</button>
+                        <div class=" col-md-3 col-sm-6" >
+                           <div class="col-md-12">
+                                <textarea class="input-textarea " placeholder="ghi chú" name="note" id="note" rows="4"
+                                          cols="50"></textarea>
+                           </div>
+                            <%--<button type="submit" class="btn  mx-auto btn-edit mt-4" style="" id="">Thêm mới</button>--%>
                         </div>
 
+                       <div class="col-md-2 col-sm-6" style="margin-top: -10px">
+                           <button type="submit" class="btn   btn-edit mt-4 " style="" id="">Thêm mới</button>
+                       </div>
 
                     </form>
-                </div>
+                <%--</div>--%>
                 <div class="col-md-12 mt-5">
                     <form id="formSearch" class="col-md-12 ">
                         <div class=" col-md-12  form-group ">
@@ -75,7 +82,7 @@
                 </div>
 
 
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" >
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
@@ -140,7 +147,7 @@
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="text-left col-md-3 ">Ghi chú: </label>
-                                <textarea class="col-md-9 note textarea" rows="4" cols="50"></textarea>
+                                <textarea class="col-md-9 note textarea" rows="4" cols="50" disabled></textarea>
                             </div>
                         </div>
                     </div>
