@@ -58,7 +58,7 @@ jQuery(function ($) {
                 row += "<td class='text-center'>" + active + "</td>";
                 row += '<td class="text-center"><div class="d-flex justify-content-center text-center"><div class="edit text-center mr-3 mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật" style="cursor: pointer"><img src="/admin/image/Frame.svg"></div>';
                 row += '<div class="editRole text-center mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalRole"><a >Phân quyền</a></div>';
-                row += '<div class="resetPassword pl-2 text-center" data-id="' + v.id + '" ><a  >Reset mật khẩu</a></div>';
+                row += '<div class="resetPassword pl-2 text-center" data-id="' + v.id + '" data-name="'+v.username+'" ><a  >Reset mật khẩu</a></div>';
                 row += '</div></td>';
                 row += "</tr>"
             });
@@ -198,7 +198,7 @@ jQuery(function ($) {
                     $('#cancel').trigger('click');
                     $('.loader').css("display", "none");
                 }, error: function (response) {
-
+                    console.log(response)
                     $('.loader').css("display", "none");
                     alert(response.responseJSON.message);
                 }
@@ -294,6 +294,10 @@ jQuery(function ($) {
         };
         $(document).on('click','.resetPassword',function () {
             var id = $(this).attr("data-id");
+            var username = $(this).attr("data-name")
+            if (!confirm("Xác nhận reset mật khẩu tài khoản "+username+" ?")){
+                throw "fail";
+            }
             $.ajax({
                 type: "PUT",
                 url: "/api/consignment/user/reset/"+id,

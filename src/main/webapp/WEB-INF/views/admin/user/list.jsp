@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="col-sm-12 mt-3 form-group">
                                         <label class="ward input-label col-md-6 text-right">Tên đăng nhập:</label>
-                                        <input class="form-control col-md-6 " required name="username" id="username">
+                                        <input class="form-control col-md-6 " pattern="^[a-zA-Z0-9_]*$" required name="username" id="username">
                                     </div>
                                     <div class="col-sm-12 mt-3 form-group">
                                         <label class="ward input-label col-md-6 text-right">Email:</label>
