@@ -41,5 +41,7 @@
     <definition name="admin/person-info/*" extends="admin.definition">
         <put-attribute name="body" value="/WEB-INF/views/admin/person-info/{1}.jsp"></put-attribute>
     </definition>
-
+    <definition name="admin/job-title/*" extends="admin.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin/job-title/{1}.jsp"></put-attribute>
+    </definition>
 </tiles-definitions>

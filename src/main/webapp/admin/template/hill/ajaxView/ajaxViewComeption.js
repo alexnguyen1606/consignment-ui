@@ -176,8 +176,8 @@ function setValueCompetition() {
                         console.log(time_start);
                         console.log(time_end);
                         console.log("----------");
-                        console.log(res[0].timeStart);
-                        console.log(res[0].timeEnd);
+                        console.log(res[0].endTime);
+                        console.log(res[0].startTime);
                         console.log("----------");
                         console.log(time_start.toJSON().slice(0, 19));
                         console.log(time_end.toJSON().slice(0, 19));*/

@@ -26,6 +26,9 @@
                                 <option value="CHECK_OUT">Trả bảo hiểm</option>
                                 <option value="CHECK_IN">Nhận bảo hiểm</option>
                             </select>
+                            <input type="date" class="form-control col-md-2 input-search " value="" placeholder="Thời gian bắt đầu" name="startTime"/>
+                            <input type="date" class="form-control col-md-2 input-search " value="" name="endTime"/>
+
                             <div class=" col-md-2  ">
                                 <input class="form-control  input-search" placeholder="Tìm kiếm" value=""
                                        name="textSearch">
@@ -37,15 +40,14 @@
                 </div>
 
 
-                <div class="col-md-12 mt-5" >
+                <div class="col-md-12 mt-5">
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
-                            <th class="text-left ">Loại</th>
-                            <th  class="text-left">Mã bảo hiểm</th>
+                            <th class="text-left">Mã bảo hiểm</th>
                             <th class="text-left">CMND</th>
-
                             <th class="text-left">Họ và tên</th>
+                            <th class="text-left ">Trạng thái</th>
                             <th class="text-left ">Thời gian thao tác</th>
                             <th class="text-left ">Nơi cất trữ</th>
                             <th class="text-left ">Thao tác</th>
@@ -58,7 +60,8 @@
                     <div class="col-sm-12 col-xs-12 mr-auto ml-auto">
                         <ul id="pagination-test" class="pagination "></ul>
                     </div>
-                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm thấy thông tin</h3></div>
+                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm
+                        thấy thông tin</h3></div>
                 </div>
 
             </div>
@@ -96,10 +99,12 @@
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span class="lockersName"></span></label>
+                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span
+                                        class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Người thao tác: <span class="userName">Bùi Bình An</span></label>
+                                <label class="  text-left col-md-12 ">Người thao tác: <span
+                                        class="userName">Bùi Bình An</span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12 ">Tài khoản thao tác: <span class="username"></span></label>

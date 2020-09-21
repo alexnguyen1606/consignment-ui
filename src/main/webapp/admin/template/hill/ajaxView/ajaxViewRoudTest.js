@@ -36,8 +36,8 @@ function showViewRoundTest() {
                          console.log(time_start);
                          console.log(time_end);
                          console.log("----------");
-                         console.log(res.timeStart);
-                         console.log(res.timeEnd);
+                         console.log(res.endTime);
+                         console.log(res.startTime);
                          console.log("----------");
                          console.log(time_start.toJSON().slice(0, 19));
                          console.log(time_end.toJSON().slice(0, 19));*/

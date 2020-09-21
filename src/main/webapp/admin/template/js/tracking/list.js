@@ -42,14 +42,12 @@ jQuery(function ($) {
                     type = "Trả bảo hiểm"
                 }
                 var date = new Date(v.createdDate);
-                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+                var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
                 row += "<tr style='border-radius: 5px;'>";
-                row += "<td>" + type + "</td>"
                 row += "<td>" + v.customer.insuranceCode + "</td>";
-                ;
                 row += "<td>" + v.customer.numberIdentify + "</td>";
-
                 row += "<td>" + v.customer.fullName + "</td>";
+                row += "<td>" + type + "</td>";
                 row += "<td>" + createdDate + "</td>";
                 row += "<td>" + v.locker.name + " --- " + v.locker.code + "</td>";
                 row += '<td><div class="btn-detail text-center" data-id="' + v.id + '" data-toggle="modal" data-target="#modalLogging"><a >Chi tiết</a></div></td>';
@@ -132,7 +130,7 @@ jQuery(function ($) {
                     $('.numberIdentify').text(data.customer.numberIdentify);
                     $('.fullName').text(data.customer.fullName);
                     var date = new Date(data.createdDate);
-                    var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
+                    var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
                     $('.createdDate').text(createdDate);
                     $('.lockersName').text(data.locker.name + " --- " + data.locker.code);
                     $('.userName').text(data.user.fullName);

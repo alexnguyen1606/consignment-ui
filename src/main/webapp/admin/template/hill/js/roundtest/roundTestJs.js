@@ -424,7 +424,7 @@ $('#btn_save_all').on('click', function () {
             dataArray["timeEnd"] = moment($('#input_time_end3').val()).toDate();
             dataArray["timeStart"] = moment($('#input_time_start3').val()).toDate();
         }
-        //dataArray["timeStart"]=$('#input_time_end').val();
+        //dataArray["endTime"]=$('#input_time_end').val();
         dataArray["timeRound"] = $('#time_round_test_count').val();
         dataArray["condition_id"] = $('input[name="customRadio_condi"]:checked').val();
         dataArray["giveCertificate"] = $('input[name="customRadio2"]:checked').val();

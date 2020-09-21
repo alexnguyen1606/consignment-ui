@@ -17,51 +17,66 @@
                     <span class=" text-uppercase form-label">Thêm mới thẻ</span>
                 </div>
                 <%--<div class="col-md-12">--%>
-                    <form class="d-flex flex-container " id="formBorrow">
-                        <input type="hidden" name="customerId" id="customerId">
-                        <div class="col-md-3 col-sm-6 d-flex flex-column">
-                            <div class=" col-md-12  form-group ">
-                                <label class=" text-right col-md-4 form-label ">Mã bảo hiểm:<span
-                                        class="required" style="color: #e02222;">*</span></label>
-                                <input class="form-control input " value="" required name="insuranceCode"
-                                       id="insuranceCode">
-                            </div>
+                <form class="d-flex flex-container " id="formBorrow">
+                    <input type="hidden" name="customerId" id="customerId">
+                    <div class="col-md-3 col-sm-6 d-flex flex-column">
+                        <div class=" col-md-12  form-group ">
+                            <label class=" text-right col-md-4 form-label ">Mã bảo hiểm:<span
+                                    class="required" style="color: #e02222;">*</span></label>
+                            <input class="form-control input " value="" required name="insuranceCode"
+                                   id="insuranceCode">
+                        </div>
 
 
-                            <div class=" col-md-12  form-group ">
-                                <label class=" text-right col-md-4 form-label ">CMND:<span
-                                        class="required" style="color: #e02222;">*</span></label>
-                                <input class="form-control input " value="" required name="numberIdentify"
-                                       id="numberIdentify">
-                            </div>
+                        <div class=" col-md-12  form-group ">
+                            <label class=" text-right col-md-4 form-label ">CMND:<span
+                                    class="required" style="color: #e02222;">*</span></label>
+                            <input class="form-control input " value="" required name="numberIdentify"
+                                   id="numberIdentify">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 d-flex flex-column">
+                        <div class=" col-md-12 form-group ">
+                            <label class=" text-right col-md-4 form-label ">Tủ lưu trữ:</label>
+                            <select class="form-control input " value="" name="cabinetId"
+                                    id="cabinetId"></select>
 
                         </div>
-                        <div class="col-md-3 col-sm-6 d-flex flex-column">
-                            <div class=" col-md-12  form-group ">
-                                <label class=" text-right col-md-4 form-label ">Họ và tên:</label>
-                                <input class="form-control input " value="" name="fullName" id="fullName">
-                            </div>
+                        <div class=" col-md-12 form-group ">
+                            <label class=" text-right col-md-4 form-label ">Ô cất trữ:</label>
+                            <select class="form-control input lockers" value="" name="lockersId"
+                                    id="lockersId"></select>
 
-
-                            <div class=" col-md-12 form-group ">
-                                <label class=" text-right col-md-4 form-label ">Nơi lưu trữ:</label>
-                                <select class="form-control input lockers" value="" name="lockersId" id="lockersId"></select>
-
-                            </div>
                         </div>
-                        <div class=" col-md-3 col-sm-6" >
-                           <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column">
+                        <div class=" col-md-12  form-group ">
+                            <label class=" text-right col-md-4 form-label ">Họ và tên:</label>
+                            <input class="form-control input " value="" name="fullName" id="fullName">
+                        </div>
+
+
+                        <div class=" col-md-12 form-group ">
+
+
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-6">
+                        <div class="col-md-12">
                                 <textarea class="input-textarea " placeholder="ghi chú" name="note" id="note" rows="4"
                                           cols="50"></textarea>
-                           </div>
-                            <%--<button type="submit" class="btn  mx-auto btn-edit mt-4" style="" id="">Thêm mới</button>--%>
                         </div>
+                        <%--<button type="submit" class="btn  mx-auto btn-edit mt-4" style="" id="">Thêm mới</button>--%>
+                    </div>
 
-                       <div class="col-md-2 col-sm-6" style="margin-top: -10px">
-                           <button type="submit" class="btn   btn-edit mt-4 " style="" id="">Thêm mới</button>
-                       </div>
+                    <div class="col-md-3 col-sm-6" style="margin-top: -10px">
+                        <button type="submit" class="btn   btn-edit mt-4 " style="" id="">Thêm mới</button>
+                    </div>
 
-                    </form>
+                </form>
                 <%--</div>--%>
                 <div class="col-md-12 mt-5">
                     <form id="formSearch" class="col-md-12 ">
@@ -71,6 +86,9 @@
                             <select class="form-control col-md-2 input-search lockers" value="" name="lockersId">
                                 <option value="">Nơi lưu trữ</option>
                             </select>
+                            <input type="date" class="form-control col-md-2 input-search " value=""
+                                   placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
+                            <input type="date" class="form-control col-md-2 input-search " value="" id="endTime" name="endTime"/>
                             <div class=" col-md-2  ">
                                 <input class="form-control  input-search" placeholder="Tìm kiếm" value=""
                                        name="textSearch">
@@ -82,7 +100,7 @@
                 </div>
 
 
-                <div class="col-md-12 mt-5" >
+                <div class="col-md-12 mt-5">
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
@@ -101,7 +119,8 @@
                     <div class="col-sm-12 col-xs-12 mr-auto ml-auto">
                         <ul id="pagination-test" class="pagination "></ul>
                     </div>
-                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm thấy thông tin</h3></div>
+                    <div class="form-edit text-center w-100 pt-5 " id="no-content" style="display: none"><h3>Không tìm
+                        thấy thông tin</h3></div>
                 </div>
 
             </div>
@@ -140,10 +159,12 @@
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span class="lockersName"></span></label>
+                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span
+                                        class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Người tiếp nhận bảo hiểm: <span class="userName"></span></label>
+                                <label class="  text-left col-md-12 ">Người tiếp nhận bảo hiểm: <span
+                                        class="userName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="text-left col-md-3 ">Ghi chú: </label>

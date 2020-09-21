@@ -76,7 +76,7 @@ jQuery(function ($) {
 
                 },
                 success: function (response) {
-
+                    window.localStorage.setItem("avatar",url);
                     alert("Cập nhật ảnh thành công");
                     $('.loader').css("display", "none");
                 }, error: function (response) {
