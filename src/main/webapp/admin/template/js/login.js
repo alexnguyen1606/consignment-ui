@@ -28,7 +28,6 @@ $(document).ready(function () {
             success: function (res) {
 
                 localStorage.setItem("consignment_token", res.token);
-                getInfo();
                 $('.spin').removeClass('display-none');
                 $('#formLogin').submit();
             },
@@ -46,30 +45,7 @@ $(document).ready(function () {
         });
 
     }
-    function getInfo() {
-        $.ajax({
-            type: "GET",
-            url: "/api/consignment/user/info",
-            headers: {"Authorization": "Bearer " + localStorage.getItem('consignment_token')},
-            contentType: "application/json",
-            beforeSend: function () {
 
-            },
-            success: function (response) {
-                window.localStorage.setItem("fullName",response.data.fullname);
-                window.localStorage.setItem("email",response.data.email);
-                if (response.data.avatar == "" || response.data.avatar == null) {
-                    window.localStorage.setItem("avatar","/admin/image/IMG_1528%201.png");
-                } else {
-                    window.localStorage.setItem("avatar",response.data.avatar);
-                }
-
-            }, error: function (jqXHR) {
-
-
-            }
-        })
-    };
     function loginForm(data) {
         $.ajax({
             url: '/form/api/login',

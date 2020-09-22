@@ -44,8 +44,9 @@
                         <thead>
                         <tr role="row">
                             <th class="text-left ">Mã hộp</th>
-                            <th width="30%" class="text-left">Tên hộp</th>
+                            <th width="30%" class="text-left">Tên hộp đựng</th>
                             <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Tên tủ</th>
                             <th class="text-left">Số lượng bảo hiểm cất trữ</th>
                             <th class="text-left">Thao tác</th>
                         </tr>
@@ -96,6 +97,11 @@
                                         <select class="form-control col-md-6" name="isActive" id="isActive">
                                             <option value="1" selected>Hoạt động</option>
                                             <option value="0">Khóa</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 mt-3 form-group">
+                                        <label class="ward input-label col-md-6 text-right">Tủ lưu trữ:</label>
+                                        <select class="form-control col-md-6" name="cabinetId" id="cabinetId">
                                         </select>
                                     </div>
                                     <div class="col-sm-12 mt-3 form-group text-center" style="height: 46px">

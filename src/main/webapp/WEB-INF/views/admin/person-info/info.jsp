@@ -34,7 +34,11 @@
                             <input class="form-control col-md-4 email" type="email" required name="email"
                                    id="email">
                         </div>
-
+                        <div class="col-sm-12 mt-3 form-group">
+                            <label class="ward input-label col-md-4 text-right">Số điện thoại:</label>
+                            <input class="form-control col-md-4 phoneNumber"  required name="phoneNumber"
+                                   id="phoneNumber">
+                        </div>
 
                         <div class="col-sm-12 mt-3 form-group text-center" style="height: 46px;margin-left: 70px">
                             <div class="col-md-6 text-right">

@@ -55,6 +55,7 @@ jQuery(function ($) {
                 row += "<td>" + v.fullName + "</td>";
                 row += "<td>" + v.username + "</td>";
                 row += "<td>" + v.email + "</td>";
+                row += "<td>" + v.jobTitle.name + "</td>";
                 row += "<td class='text-center'>" + active + "</td>";
                 row += '<td class="text-center"><div class="d-flex justify-content-center text-center"><div class="edit text-center mr-3 mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật" style="cursor: pointer"><img src="/admin/image/Frame.svg"></div>';
                 row += '<div class="editRole text-center mr-1" data-id="' + v.id + '" data-toggle="modal" data-target="#modalRole"><a >Phân quyền</a></div>';
@@ -108,6 +109,7 @@ jQuery(function ($) {
         function cancel() {
             $('#id').val("");
             $('#username').val("");
+            $('#avatar').val("");
             $('#password').val("");
             $('#password').attr("disabled", false)
             $('#email').val("");
@@ -138,6 +140,9 @@ jQuery(function ($) {
                     $('#password').val("");
                     $('#email').val(data.email);
                     $('#fullName').val(data.fullName);
+                    $('#phoneNumber').val(data.phoneNumber);
+                    $('#avatar').val(data.avatar);
+                    $('#jobTitleId').val(data.jobTitleId);
                     if (data.isActive) {
                         $('#isActive').val(1)
                     } else {
@@ -319,6 +324,28 @@ jQuery(function ($) {
         $('#formSearch').on('submit',function (e) {
             e.preventDefault();
             getAllUser("")
-        })
+        });
+        function getJobTitle() {
+            $.ajax({
+                type: "GET",
+                url: "/api/consignment/job-title",
+                headers: {"Authorization": "Bearer " + localStorage.getItem('consignment_token')},
+                contentType: "application/json",
+                beforeSend: function () {
+                },
+                success: function (response) {
+                    var row= "";
+                    $.each(response.data,function (i,v) {
+                        row+='<option value="'+v.id+'" >'+v.name+'</option>';
+                    })
+                    $('#jobTitleId').empty();
+                    $('#jobTitleId').append(row);
+
+                }, error: function (response) {
+
+                }
+            });
+        }
+        getJobTitle();
     })
 })

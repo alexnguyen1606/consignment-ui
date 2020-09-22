@@ -5,6 +5,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <link rel="stylesheet" href="/admin/template/css/borrow-lockers.css">
 <%@ page pageEncoding="utf-8" %>
+<script src="/admin/template/js/home.js"></script>
 <div class="content-wrapper" style="background: white">
 
     <!-- /.content-header -->
@@ -41,4 +42,5 @@
     <!-- /.content -->
 </div>
 <script src="/admin/template/js/index.js"></script>
+
 

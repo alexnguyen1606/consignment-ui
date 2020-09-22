@@ -118,6 +118,7 @@ jQuery(function ($) {
                     $('#customerId').val(data.id);
                     $('#insuranceCode').val(data.insuranceCode);
                     $('#fullName').val(data.fullName);
+                    $('#phoneNumber').val(data.phoneNumber);
                     $('#numberIdentify').val(data.numberIdentify);
                 }, error: function (response) {
                     $('#customerId').val("");
@@ -209,7 +210,17 @@ jQuery(function ($) {
             $('#numberIdentify').val("");
 
         }
-
+        function clear(){
+            $('.insuranceCode').text("");
+            $('.numberIdentify').text("");
+            $('.fullName').text("");
+            $('.createdDate').text("");
+            $('.lockersName').text("");
+            $('.userName').text("");
+            $('.note').text("");
+            $('.phoneNumber2').text("");
+            $('#borrowLockersId').val("")
+        }
         $(document).on('click', '.btn-detail', function () {
             var id = $(this).attr("data-id");
             $.ajax({
@@ -223,19 +234,13 @@ jQuery(function ($) {
                 success: function (response) {
                     $('.loader').css("display", "none");
                     var data = response.data;
-                    $('.insuranceCode').text("");
-                    $('.numberIdentify').text("");
-                    $('.fullName').text("");
-                    $('.createdDate').text("");
-                    $('.lockersName').text("");
-                    $('.userName').text("");
-                    $('.note').text("");
-                    $('#borrowLockersId').val("")
+                    clear();
 
 
                     $('.insuranceCode').text(data.insuranceCode);
                     $('.numberIdentify').text(data.customer.numberIdentify);
                     $('.fullName').text(data.customer.fullName);
+                    $('.phoneNumber2').text(data.customer.phoneNumber);
                     var date = new Date(data.createdDate);
                     var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
                     $('.createdDate').text(createdDate);
@@ -273,7 +278,53 @@ jQuery(function ($) {
 
                 }
             });
-        })
+        });
+        function getCabinet(){
+            $.ajax({
+                type: "GET",
+                url: "/api/consignment/cabinet",
+                headers: {"Authorization": "Bearer " + localStorage.getItem('consignment_token')},
+                contentType: "application/json",
+                beforeSend: function () {
+                    $('.loader').css("display", "block");
+                },
+                success: function (response) {
+                    var row = "";
+                   $.each(response.data,function (i,v) {
+                       row+='<option value="'+v.id+'">'+v.nameCabinet+'</option>';
+                   });
+                   $('#cabinetId').empty();
+                   $('#cabinetId').append(row)
+                }, error: function (response) {
+
+
+                }
+            });
+        }
+        getCabinet();
+        $('#cabinetId').on('change',function () {
+            var cabinetId = $('#cabinetId').val();
+            $.ajax({
+                type: "GET",
+                url: "/api/consignment/lockers/cabinet/"+cabinetId,
+                headers: {"Authorization": "Bearer " + localStorage.getItem('consignment_token')},
+                contentType: "application/json",
+                beforeSend: function () {
+
+                },
+                success: function (response) {
+                    var row = "";
+                    $.each(response.data,function (i,v) {
+                        row+='<option value="'+v.id+'">'+v.name+'</option>';
+                    });
+                    $('#lockersId').empty();
+                    $('#lockersId').append(row)
+                }, error: function (response) {
+
+
+                }
+            });
+        });
     });
 
 });

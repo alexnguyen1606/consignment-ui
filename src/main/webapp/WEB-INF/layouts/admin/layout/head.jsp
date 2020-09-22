@@ -50,7 +50,7 @@
 <script src="/admin/ckfinder/ckfinder.js"></script><%--bỏ đi vì footer có rồi,tốn dung lượng người dùng--%>
 
 <script src="/admin/ckeditor/ckeditor.js"></script>
-<script src="/admin/template/js/info.js"></script>
+
 <link rel="stylesheet" href="/admin/template/datetimepicker/css/bootstrap-datetimepicker.min.css">
 <script src="/admin/template/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/admin/template/datetimepicker/js/locales/bootstrap-datetimepicker.uk.js"></script>

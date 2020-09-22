@@ -60,8 +60,8 @@
 
 
                         <div class=" col-md-12 form-group ">
-
-
+                            <label class=" text-right col-md-4 form-label ">Số điện thoại:</label>
+                            <input class="form-control input " value="" name="phoneNumber" id="phoneNumber">
                         </div>
                     </div>
                     <div class=" col-md-3 col-sm-6">
@@ -153,6 +153,10 @@
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12  ">Họ và tên: <span
                                         class="fullName"></span></label>
+                            </div>
+                            <div class=" col-md-6  form-group ">
+                                <label class="  text-left col-md-12  ">Số điện thoại: <span
+                                        class="phoneNumber2"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12  ">Time-in: <span

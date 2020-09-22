@@ -17,6 +17,7 @@ public class JobTitleController {
     @GetMapping("/list")
     public ModelAndView list(){
         ModelAndView mav = new ModelAndView("admin/job-title/list");
+        mav.addObject("jobTitle","active");
         return mav;
     }
 

@@ -45,6 +45,7 @@
                             <th class="text-left ">Họ và tên</th>
                             <th class="text-left">Username</th>
                             <th class="text-left">Email</th>
+                            <th class="text-left">Chức vụ</th>
                             <th class="text-center">Trạng thái</th>
                             <th class="text-center ">Thao tác</th>
                         </tr>
@@ -80,6 +81,7 @@
 
                                 <form id="formEdit">
                                     <input type="hidden" name="id" id="id">
+                                    <input type="hidden" name="avatar" id="avatar">
                                     <div class="col-sm-12 mt-3 form-group">
                                         <label class="ward input-label col-md-6 text-right">Họ và tên:</label>
                                         <input class="form-control col-md-6" type="" required name="fullName"
@@ -94,16 +96,27 @@
                                         <input class="form-control col-md-6" type="email" required name="email"
                                                id="email">
                                     </div>
+                                    <div class="col-sm-12 mt-3 form-group">
+                                        <label class="ward input-label col-md-6 text-right">Số điện thoại:</label>
+                                        <input class="form-control col-md-6"  required name="phoneNumber"
+                                               id="phoneNumber">
+                                    </div>
                                     <div class="col-sm-12 mt-3 form-group pass">
                                         <label class="ward input-label col-md-6 text-right">Mật khẩu:</label>
                                         <input class="form-control col-md-6" type="password" name="password"
                                                id="password">
                                     </div>
+
                                     <div class="col-sm-12 mt-3 form-group">
                                         <label class="ward input-label col-md-6 text-right">Trạng thái:</label>
                                         <select class="form-control col-md-6" name="isActive" id="isActive">
                                             <option value="1" selected>Hoạt động</option>
                                             <option value="0">Khóa</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 mt-3 form-group">
+                                        <label class="ward input-label col-md-6 text-right">Chức vụ lao động:</label>
+                                        <select class="form-control col-md-6" name="jobTitleId" id="jobTitleId">
                                         </select>
                                     </div>
                                     <div class="col-sm-12 mt-3 form-group text-center" style="height: 46px">

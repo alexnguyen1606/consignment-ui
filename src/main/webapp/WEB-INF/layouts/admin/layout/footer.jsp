@@ -1,6 +1,6 @@
 <%@ page pageEncoding="utf-8" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-
+<script src="/admin/template/js/info.js"></script>
 <aside class="main-sidebar sidebar-light-white " style="border: 1px solid #E0E0E0">
     <!-- Brand Logo -->
     <a href="/" class="brand-link">
@@ -64,6 +64,18 @@
 
                     </li>
                 </sec:authorize>
+                <sec:authorize access="hasAnyAuthority('MANAGE_CABINET','ROOT')">
+                    <li class="nav-item   ">
+                        <a href="/consignment/cabinet/list" class="nav-link menu-item   ${cabinet} ">
+                            <img class="icon_e" src="/admin/image/Group2.svg" style="filter: invert(0.3)">
+                            <p>
+                                Tủ lưu trữ
+
+                            </p>
+                        </a>
+
+                    </li>
+                </sec:authorize>
                 <sec:authorize access="hasAnyAuthority('MANAGE_LOCKERS','ROOT')">
                     <li class="nav-item   ">
                         <a href="/consignment/locker/list" class="nav-link menu-item   ${locker} ">
@@ -87,6 +99,19 @@
 
                     </li>
                 </sec:authorize>
+                <sec:authorize access="hasAnyAuthority('MANAGE_USER','ROOT')">
+                    <li class="nav-item   ">
+                        <a href="/consignment/job-title/list" class="nav-link menu-item   ${jobTitle} ">
+                            <img class="icon_e" src="/admin/image/Frame%20%203.svg" style="filter: invert(0.3)">
+                            <p>
+                                Chức vụ
+
+                            </p>
+                        </a>
+
+                    </li>
+                </sec:authorize>
+
                 <li class="nav-item   ">
                     <a href="/consignment/logout" class="nav-link menu-item    ">
                         <img class="icon_e" src="/admin/image/Group%20349.png">
