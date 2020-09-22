@@ -17,23 +17,35 @@
                 <div class="col-md-12 mt-3">
                     <form id="formSearch" class=" col-md-12 ">
                         <div class=" col-md-12  form-group ">
-                            <%--<label class=" text-right pt-1 form-label col-md-1 ">Nơi lưu trữ:</label>--%>
-                            <select class="form-control col-md-2 input-search lockers" value="" name="lockerId">
-                                <option value="">Nơi lưu trữ</option>
-                            </select>
-                            <select class="form-control col-md-2 input-search " value="" name="type">
-                                <option value="">Loại</option>
-                                <option value="CHECK_OUT">Trả bảo hiểm</option>
-                                <option value="CHECK_IN">Nhận bảo hiểm</option>
-                            </select>
-                            <input type="date" class="form-control col-md-2 input-search " value="" placeholder="Thời gian bắt đầu" name="startTime"/>
-                            <input type="date" class="form-control col-md-2 input-search " value="" name="endTime"/>
+                            <div class="col-md-2">
+                                <label class=" text-left pt-1 form-label col-md-12 ">Nơi lưu trữ:</label>
+                                <select class="form-control col-md-12 input-search lockers" value="" name="lockerId">
+                                    <option value="">Nơi lưu trữ</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class=" text-left pt-1 form-label col-md-12 ">Trạng thái:</label>
+                                <select class="form-control col-md-12 input-search " value="" name="type">
+                                    <option value="">Loại</option>
+                                    <option value="CHECK_OUT">Trả bảo hiểm</option>
+                                    <option value="CHECK_IN">Nhận bảo hiểm</option>
+                                </select>
+                            </div>
+                           <div class="col-md-2">
+                               <label class=" text-left pt-1 form-label col-md-12 ">Từ ngày:</label>
+                               <input type="date" class="form-control col-md-12 input-search " value="" placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
+                           </div>
+                            <div class="col-md-2">
+                                <label class=" text-left pt-1 form-label col-md-12 ">Đến ngày:</label>
+                                <input type="date" class="form-control col-md-12 input-search " value="" name="endTime" id="endTime"/>
+                            </div>
 
                             <div class=" col-md-2  ">
+                                <label class=" text-left pt-1 form-label col-md-12 ">Trạng thái:</label>
                                 <input class="form-control  input-search" placeholder="Tìm kiếm" value=""
                                        name="textSearch">
                                 <button type="submit" class="btn fa fa-search location-search-button"
-                                        id="search-icon"></button>
+                                        id="search-icon" style="top:30px"></button>
                             </div>
                         </div>
                     </form>

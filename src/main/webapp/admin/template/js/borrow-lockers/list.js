@@ -325,6 +325,14 @@ jQuery(function ($) {
                 }
             });
         });
+        $('#startTime').on('change',function () {
+            var value = $(this).val();
+            $('#endTime').attr("min",value)
+        });
+        $('#endTime').on('change',function () {
+            var value = $(this).val();
+            $('#startTime').attr("max",value)
+        })
     });
 
 });
