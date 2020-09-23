@@ -13,7 +13,7 @@
     <div class="w-100 pl-2 pr-2 pt-3">
         <div class="col-md-12">
             <div class="form-edit  ">
-                <div class="pt-3 pl-4 pb-3">
+                <div class="pt-3 pl-4 pb-3 font-label ">
                     <span class=" text-uppercase form-label">Thêm mới thẻ</span>
                 </div>
                 <%--<div class="col-md-12">--%>
@@ -82,18 +82,18 @@
                     <form id="formSearch" class="col-md-12 ">
                         <div class=" col-md-12  form-group ">
                             <div class="col-md-2">
-                                <label class=" text-left col-md-12    ">Nơi lưu trữ:</label>
+                                <label class=" text-left col-md-12 font-label   ">Nơi lưu trữ:</label>
                                 <select class="form-control col-md-12 input-search lockers" value="" name="lockersId">
                                     <option value="">Nơi lưu trữ</option>
                                 </select>
                             </div>
                             <div class="col-md-2">
-                                <label class=" text-left   col-md-12 ">Từ ngày:</label>
+                                <label class=" text-left  font-label  col-md-12 ">Từ ngày:</label>
                                 <input type="date" class="form-control col-md-12 input-search " value=""
                                        placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
                             </div>
                             <div class="col-md-2">
-                                <label class=" text-left   col-md-12 ">Đến ngày:</label>
+                                <label class=" text-left font-label   col-md-12 ">Đến ngày:</label>
                                 <input type="date" class="form-control col-md-12 input-search " value="" id="endTime" name="endTime"/>
                             </div>
 
@@ -113,12 +113,12 @@
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row">
-                            <th width="" class="text-left">Mã bảo hiểm</th>
-                            <th class="text-left">CMND</th>
-                            <th class="text-left ">Họ và tên</th>
-                            <th class="text-left ">Time-in</th>
-                            <th class="text-left ">Nơi cất trữ</th>
-                            <th class="text-left ">Thao tác</th>
+                            <th width="" class="text-left font-label ">Mã bảo hiểm</th>
+                            <th class="text-left font-label ">CMND</th>
+                            <th class="text-left font-label ">Họ và tên</th>
+                            <th class="text-left font-label ">Time-in</th>
+                            <th class="text-left font-label ">Nơi cất trữ</th>
+                            <th class="text-left font-label ">Thao tác</th>
                         </tr>
                         </thead>
                         <tbody id="tableBorrow">
@@ -152,35 +152,35 @@
                         <div class="row col-md-12">
                             <input type="hidden" name="id" id="borrowLockersId" value="">
                             <div class=" col-md-6  form-group ">
-                                <label class=" text-left col-md-12 ">Mã bảo hiểm: <span
+                                <label class=" text-left col-md-12 font-label  ">Mã bảo hiểm: <span
                                         class="insuranceCode"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12  ">CMND: <span
+                                <label class="  text-left col-md-12  font-label ">CMND: <span
                                         class="numberIdentify"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12  ">Họ và tên: <span
+                                <label class="  text-left col-md-12  font-label ">Họ và tên: <span
                                         class="fullName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12  ">Số điện thoại: <span
+                                <label class="  text-left col-md-12  font-label ">Số điện thoại: <span
                                         class="phoneNumber2"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12  ">Time-in: <span
+                                <label class="  text-left col-md-12  font-label ">Time-in: <span
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span
+                                <label class="  text-left col-md-12 font-label ">Nơi cất trữ: <span
                                         class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Người tiếp nhận bảo hiểm: <span
+                                <label class="  text-left col-md-12 font-label ">Người tiếp nhận bảo hiểm: <span
                                         class="userName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="text-left col-md-3 ">Ghi chú: </label>
+                                <label class="text-left col-md-3 font-label ">Ghi chú: </label>
                                 <textarea class="col-md-9 note textarea" rows="4" cols="50" disabled></textarea>
                             </div>
                         </div>

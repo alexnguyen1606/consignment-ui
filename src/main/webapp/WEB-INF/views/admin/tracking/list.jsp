@@ -55,7 +55,7 @@
                 <div class="col-md-12 mt-5">
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
-                        <tr role="row">
+                        <tr role="row" class="font-label ">
                             <th class="text-left">Mã bảo hiểm</th>
                             <th class="text-left">CMND</th>
                             <th class="text-left">Họ và tên</th>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row mt-3 ml-3 mr-3">
-                        <div class="row col-md-12">
+                        <div class="row col-md-12 font-label ">
                             <div class=" col-md-6  form-group ">
                                 <label class=" text-left col-md-12 ">Mã bảo hiểm: <span
                                         class="insuranceCode">145732267</span></label>

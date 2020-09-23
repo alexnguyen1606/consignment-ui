@@ -145,3 +145,6 @@ input[type="file"] {
     color: #ffffff !important;
     height: 23px;
 }
+.font-label{
+    font-family: Poppins, sans-serif;
+}

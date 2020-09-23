@@ -16,7 +16,7 @@
                 <form id="formSearch" class=" col-md-12 ">
                     <div class=" col-md-12  form-group ">
                         <%--<label class=" text-right pt-1 form-label col-md-1 ">Nơi lưu trữ:</label>--%>
-                        <div class="col-md-8">
+                        <div class="col-md-8 font-label ">
                             <button type="button" id="create" class="btn color-theme-bg" data-toggle="modal"
                                     data-target="#modalEdit" style="width: 250px;height: 46px;color: #ffffff "><i
                                     class="fa fa-plus-circle mr-1"></i>Thêm mới tủ lưu trữ
@@ -42,7 +42,7 @@
                 <div class="col-md-12 mt-5 " >
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
-                        <tr role="row">
+                        <tr role="row" class="font-label ">
                             <th class="text-left ">Tên tủ</th>
                             <th class="text-left ">Mã tủ</th>
                             <th class="text-center">Trạng thái</th>
@@ -67,7 +67,7 @@
         <div class="modal-dialog modal-m" style="border-radius: 30px">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header color-theme-bg">
+                <div class="modal-header color-theme-bg font-label ">
 
                     <h4 class="modal-title">Thêm mói tủ lưu trữ</h4>
                     <button type="button" class="close position-relative  btnClose" style="z-index: 15"
@@ -77,7 +77,7 @@
                 <div class="modal-body" style="min-height: 400px">
                     <div class="row mt-3 ml-3 mr-3">
                         <div class="row col-md-12">
-                            <div class="panel-right col-md-12">
+                            <div class="panel-right col-md-12 font-label ">
 
                                 <form id="formEdit">
                                     <input type="hidden" name="id" id="id">

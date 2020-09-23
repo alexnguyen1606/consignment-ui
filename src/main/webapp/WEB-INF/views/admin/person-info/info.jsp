@@ -15,7 +15,7 @@
                    <img class="avatar img-circle text-center" style="height: 80px;" src="">
                </div>
 
-                <div class=" col-md-12 mt-3">
+                <div class=" col-md-12 mt-3 font-label ">
                     <div class="col-md-12 ">
                         <label class="custom-file-upload">
                             <input type="file" id="avatarUpload" />

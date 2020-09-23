@@ -16,7 +16,7 @@
         <!-- Sidebar user panel (optional) -->
 
         <!-- Sidebar Menu -->
-        <nav class="mt-2">
+        <nav class="mt-2 font-label">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
@@ -32,9 +32,10 @@
                 <li class="nav-item text-center pt-2" style="">
                     <a href="/consignment/personal-infomation">
                         <img class="img-circle avatar" style="width:80px;height: 80px "  src="">
-                        <p  class=" menu-item   ">
 
-                            <p class="fullName" ></p>
+                        <p  class=" menu-item ">
+                           <span class="fullName" ></span>
+                            <img src="/admin/image/FrameInfo.svg" class="ml-1">
                         </p>
                     </a>
 

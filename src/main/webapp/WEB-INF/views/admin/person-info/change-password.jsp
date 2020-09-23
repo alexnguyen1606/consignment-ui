@@ -16,9 +16,9 @@
 
                 <div class=" col-md-12 mt-3">
                     <div class="w-100 ">
-                        <a href="/consignment/personal-infomation" class="" style=""><i class="fa fa-info-circle"></i> Thông tin </a>
+                        <a href="/consignment/personal-infomation" class=""  style=""><i class="fa fa-info-circle"></i> Thông tin </a>
                     </div>
-                    <form id="formEditPassword" class="col-md-12 ">
+                    <form id="formEditPassword" class="col-md-12 font-label  ">
                         <div class="col-sm-12 mt-3 form-group ">
                             <label class="ward input-label col-md-4 text-right">Mật khẩu cũ:</label>
                             <input class="form-control col-md-4 " type="password" required name="password"

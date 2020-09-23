@@ -16,7 +16,7 @@
                 <form id="formSearch" class=" col-md-12 ">
                     <div class=" col-md-12  form-group ">
                         <%--<label class=" text-right pt-1 form-label col-md-1 ">Nơi lưu trữ:</label>--%>
-                        <div class="col-md-8">
+                        <div class="col-md-8 font-label ">
                             <button type="button" id="create" class="btn color-theme-bg" data-toggle="modal"
                                     data-target="#modalEdit" style="width: 250px;height: 46px;color: #ffffff "><i
                                     class="fa fa-plus-circle mr-1"></i>Thêm mới hộp lưu trữ
@@ -42,7 +42,7 @@
                 <div class="col-md-12 mt-5 " >
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
-                        <tr role="row">
+                        <tr role="row" class="font-label ">
                             <th class="text-left ">Mã hộp</th>
                             <th width="30%" class="text-left">Tên hộp đựng</th>
                             <th class="text-center">Trạng thái</th>
@@ -66,7 +66,7 @@
     </div>
 
     <div class="modal " id="modalEdit" role="dialog">
-        <div class="modal-dialog modal-m" style="border-radius: 30px">
+        <div class="modal-dialog modal-m font-label " style="border-radius: 30px">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header color-theme-bg">
