@@ -148,3 +148,9 @@ input[type="file"] {
 .font-label{
     font-family: Poppins, sans-serif;
 }
+.btn{
+    border-radius: 10px !important;
+}
+.table th{
+    border-top: none !important;
+}
