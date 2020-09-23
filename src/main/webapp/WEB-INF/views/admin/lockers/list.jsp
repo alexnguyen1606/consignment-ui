@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="modal " id="modalEdit" role="dialog">
+    <div class="modal " id="modalEdit" role="dialog" style="pointer-events: none">
         <div class="modal-dialog modal-m font-label " style="border-radius: 30px">
             <!-- Modal content-->
             <div class="modal-content">

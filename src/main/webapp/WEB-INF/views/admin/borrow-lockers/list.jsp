@@ -55,7 +55,7 @@
                     <div class="col-md-3 col-sm-6 d-flex flex-column">
                         <div class=" col-md-12  form-group ">
                             <label class=" text-right col-md-4 form-label ">Họ và tên:</label>
-                            <input class="form-control input " value="" name="fullName" id="fullName">
+                            <input class="form-control input " value="" name="fullName" id="fullName2">
                         </div>
 
 

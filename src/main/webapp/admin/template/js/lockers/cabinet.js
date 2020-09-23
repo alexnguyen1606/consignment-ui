@@ -139,12 +139,15 @@ jQuery(function ($) {
         $('#cancel').on('click', function () {
             cancel();
         });
+        $('.btnClose').on('click', function () {
+            cancel();
+        });
 
         function cancel() {
             $('.modal-title').text("Thêm mới tủ lưu trữ")
             $('#id').val("");
             $('#nameCabinet').val("");
-            $('#cabinetCodet').val("");
+            $('#cabinetCode').val("");
             $('#description').val("");
         }
 

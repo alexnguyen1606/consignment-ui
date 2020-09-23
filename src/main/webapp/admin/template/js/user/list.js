@@ -102,10 +102,11 @@ jQuery(function ($) {
             });
         };
         $('#cancel').on('click', function () {
-
             cancel();
         });
-
+        $('.btnClose').on('click',function () {
+            cancel();
+        })
         function cancel() {
             $('#id').val("");
             $('#username').val("");

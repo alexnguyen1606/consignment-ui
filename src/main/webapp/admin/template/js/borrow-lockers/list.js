@@ -117,7 +117,7 @@ jQuery(function ($) {
                     var data = response.data
                     $('#customerId').val(data.id);
                     $('#insuranceCode').val(data.insuranceCode);
-                    $('#fullName').val(data.fullName);
+                    $('#fullName2').val(data.fullName);
                     $('#phoneNumber').val(data.phoneNumber);
                     $('#numberIdentify').val(data.numberIdentify);
                 }, error: function (response) {
