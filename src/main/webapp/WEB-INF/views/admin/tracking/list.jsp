@@ -33,11 +33,11 @@
                             </div>
                            <div class="col-md-2">
                                <label class=" text-left pt-1 form-label col-md-12 ">Từ ngày:</label>
-                               <input type="date" class="form-control col-md-12 input-search " value="" placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
+                               <input type="date" class="form-control col-md-12 input-search date" value="" placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
                            </div>
                             <div class="col-md-2">
                                 <label class=" text-left pt-1 form-label col-md-12 ">Đến ngày:</label>
-                                <input type="date" class="form-control col-md-12 input-search " value="" name="endTime" id="endTime"/>
+                                <input type="date" class="form-control col-md-12 input-search date" value="" name="endTime" id="endTime"/>
                             </div>
 
                             <div class=" col-md-2  ">

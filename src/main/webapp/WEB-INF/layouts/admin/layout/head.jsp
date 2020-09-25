@@ -37,23 +37,17 @@
 <link rel="stylesheet" href="/admin/css/admin/spin.css">
 <link rel="stylesheet" href="/admin/css/admin/course/courseware.css">
 <link rel="stylesheet" href="/admin/css/admin/course/chapter.css">
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
 
 <link href="/admin/template/hill/css/hill.css" rel="stylesheet">
 <link rel="stylesheet" href="/admin/css/admin/course/category.css">
 <link rel="stylesheet" href="/admin/template/plugins/select2/css/select2.min.css">
 <link rel="stylesheet" href="/admin/template/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 
-<link rel="stylesheet" type="text/css" href="/admin/template/dist/bootstrap-clockpicker.min.css">
-<script type="text/javascript" src="/admin/template/dist/bootstrap-clockpicker.min.js"></script>
-<script src="/admin/ckfinder/ckfinder.js"></script><%--bỏ đi vì footer có rồi,tốn dung lượng người dùng--%>
 
-<script src="/admin/ckeditor/ckeditor.js"></script>
 
-<link rel="stylesheet" href="/admin/template/datetimepicker/css/bootstrap-datetimepicker.min.css">
-<script src="/admin/template/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/admin/template/datetimepicker/js/locales/bootstrap-datetimepicker.uk.js"></script>
+
+
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <%-- <script src="/template/hill/js/jquery-3.4.1.min.js"></script>--%>
 <link rel="apple-touch-icon" sizes="57x57" href="/admin/image/apple-icon-57x57.png">
@@ -69,7 +63,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/admin/image/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/admin/image/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/admin/image/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/admin/image/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">

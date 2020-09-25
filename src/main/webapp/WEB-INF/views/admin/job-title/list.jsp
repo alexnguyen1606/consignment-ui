@@ -92,7 +92,7 @@
                                     </div>
                                     <div class="col-sm-12 mt-3 form-group">
                                         <label class="ward input-label col-md-6 text-right">Trạng thái:</label>
-                                        <select class="form-control col-md-6" name="status" id="status">
+                                        <select class="form-control col-md-6 " name="status" id="status">
                                             <option value="1" selected>Hoạt động</option>
                                             <option value="0">Khóa</option>
                                         </select>

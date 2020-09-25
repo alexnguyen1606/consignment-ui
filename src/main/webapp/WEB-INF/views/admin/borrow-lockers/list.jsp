@@ -89,12 +89,12 @@
                             </div>
                             <div class="col-md-2">
                                 <label class=" text-left  font-label  col-md-12 ">Từ ngày:</label>
-                                <input type="date" class="form-control col-md-12 input-search " value=""
+                                <input type="date" class="form-control col-md-12 input-search date " value=""
                                        placeholder="Thời gian bắt đầu" name="startTime" id="startTime"/>
                             </div>
                             <div class="col-md-2">
                                 <label class=" text-left font-label   col-md-12 ">Đến ngày:</label>
-                                <input type="date" class="form-control col-md-12 input-search " value="" id="endTime" name="endTime"/>
+                                <input type="date" class="form-control col-md-12 input-search date " value="" id="endTime" name="endTime"/>
                             </div>
 
                             <div class=" col-md-2  ">

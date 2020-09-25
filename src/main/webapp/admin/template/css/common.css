@@ -18,12 +18,22 @@ body {
 }
 
 .input-search {
-    border: 1px solid #BDBDBD;
+    border: 1px solid #BDBDBD !important;
     box-sizing: border-box;
     border-radius: 30px !important;
     background: #FFFFFF;
 }
 
+select.input-search{
+    border: 1px solid #BDBDBD !important;
+    box-sizing: border-box;
+    border-radius: 5px !important;
+}
+.date{
+    border: 1px solid #BDBDBD !important;
+    box-sizing: border-box;
+    border-radius: 5px !important;
+}
 .color-theme-bg {
     background: #00A5EF !important;
 }
