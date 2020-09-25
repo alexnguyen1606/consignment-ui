@@ -90,6 +90,7 @@ jQuery(function ($) {
                 row += "<td>" + v.customer.numberIdentify + "</td>";
                 row += "<td>" + v.customer.fullName + "</td>";
                 row += "<td>" + createdDate + "</td>";
+                row += "<td>" + v.lockers.cabinet.nameCabinet + "</td>";
                 row += "<td>" + v.lockers.name + " --- " + v.lockers.code + "</td>";
                 row += '<td><div class="btn-detail text-center" data-id="' + v.id + '" data-toggle="modal" data-target="#modalBorrow"><a >Chi tiết</a></div></td>';
                 row += "</tr>";
@@ -240,13 +241,15 @@ jQuery(function ($) {
                     $('.insuranceCode').text(data.insuranceCode);
                     $('.numberIdentify').text(data.customer.numberIdentify);
                     $('.fullName').text(data.customer.fullName);
-                    $('.phoneNumber2').text(data.customer.phoneNumber);
+                    $('.phoneNumber2').text(data.phoneNumber);
                     var date = new Date(data.createdDate);
                     var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
                     $('.createdDate').text(createdDate);
                     $('.lockersName').text(data.lockers.name + " --- " + data.lockers.code);
                     $('.userName').text(data.user.fullName);
+                    $('.username').text(data.user.username);
                     $('.note').text(data.note);
+                    $('.cabinetName').text(data.lockers.cabinet.nameCabinet)
                     $('#borrowLockersId').val(data.id);
                 }, error: function (response) {
                     alert(response.responseJSON.message);

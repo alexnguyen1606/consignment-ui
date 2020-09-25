@@ -117,7 +117,8 @@
                             <th class="text-left font-label ">CMND</th>
                             <th class="text-left font-label ">Họ và tên</th>
                             <th class="text-left font-label ">Time-in</th>
-                            <th class="text-left font-label ">Nơi cất trữ</th>
+                            <th class="text-left font-label ">Tủ cất trữ</th>
+                            <th class="text-left font-label ">Hộp cất trữ</th>
                             <th class="text-left font-label ">Thao tác</th>
                         </tr>
                         </thead>
@@ -172,12 +173,20 @@
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 font-label ">Nơi cất trữ: <span
+                                <label class="  text-left col-md-12 font-label ">Tủ cất trữ: <span
+                                        class="cabinetName"></span></label>
+                            </div>
+                            <div class=" col-md-6  form-group ">
+                                <label class="  text-left col-md-12 font-label ">Hộp cất trữ: <span
                                         class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="  text-left col-md-12 font-label ">Người tiếp nhận bảo hiểm: <span
                                         class="userName"></span></label>
+                            </div>
+                            <div class=" col-md-6  form-group ">
+                                <label class="  text-left col-md-12 font-label ">Tài khoản nhận bảo hiểm: <span
+                                        class="username"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
                                 <label class="text-left col-md-3 font-label ">Ghi chú: </label>
