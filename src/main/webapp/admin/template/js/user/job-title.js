@@ -49,8 +49,9 @@ jQuery(function ($) {
                         active = "<img src='/admin/image/Ellipse%2035.png'>"
                     }
                     row += '<tr>';
-                    row += '<td>' + v.jobTitleCode + '</td>';
                     row += '<td>' + v.name + '</td>';
+                    row += '<td>' + v.jobTitleCode + '</td>';
+
                     row += "<td class='text-center'>" + active + "</td>";
                     row += '<td class="text-center"><div class="d-flex text-center"><div class="edit text-center mr-3" data-id="' + v.id + '" data-toggle="modal" data-target="#modalEdit" title="Cập nhật"><img src="/admin/image/Frame.svg"></div>';
                     row += '</tr>'

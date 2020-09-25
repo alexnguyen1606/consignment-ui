@@ -43,8 +43,8 @@
                     <table class="table table-striped borderless" style="border: none">
                         <thead>
                         <tr role="row" class="font-label ">
-                            <th class="text-left ">Mã chức danh</th>
                             <th  class="text-left">Tên chức danh</th>
+                            <th class="text-left ">Mã chức danh</th>
                             <th class="text-center">Trạng thái</th>
                             <th class="text-left">Thao tác</th>
                         </tr>
