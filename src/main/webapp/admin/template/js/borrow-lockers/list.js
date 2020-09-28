@@ -91,7 +91,7 @@ jQuery(function ($) {
                 row += "<td>" + v.customer.fullName + "</td>";
                 row += "<td>" + createdDate + "</td>";
                 row += "<td>" + v.lockers.cabinet.nameCabinet + "</td>";
-                row += "<td>" + v.lockers.name + " --- " + v.lockers.code + "</td>";
+                row += "<td>" + v.lockers.name  + "</td>";
                 row += '<td><div class="btn-detail text-center" data-id="' + v.id + '" data-toggle="modal" data-target="#modalBorrow"><a >Chi tiết</a></div></td>';
                 row += "</tr>";
             });
@@ -245,7 +245,7 @@ jQuery(function ($) {
                     var date = new Date(data.createdDate);
                     var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
                     $('.createdDate').text(createdDate);
-                    $('.lockersName').text(data.lockers.name + " --- " + data.lockers.code);
+                    $('.lockersName').text(data.lockers.name );
                     $('.userName').text(data.user.fullName);
                     $('.username').text(data.user.username);
                     $('.note').text(data.note);

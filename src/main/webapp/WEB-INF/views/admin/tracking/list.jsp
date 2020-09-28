@@ -111,7 +111,11 @@
                                         class="createdDate"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">
-                                <label class="  text-left col-md-12 ">Nơi cất trữ: <span
+                                <label class="  text-left col-md-12 ">Tủ cất trữ: <span
+                                        class="cabinetName"></span></label>
+                            </div>
+                            <div class=" col-md-6  form-group ">
+                                <label class="  text-left col-md-12 ">Hộp cất trữ: <span
                                         class="lockersName"></span></label>
                             </div>
                             <div class=" col-md-6  form-group ">

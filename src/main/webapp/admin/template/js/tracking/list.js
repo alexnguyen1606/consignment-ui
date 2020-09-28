@@ -133,6 +133,7 @@ jQuery(function ($) {
                     var createdDate = date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
                     $('.createdDate').text(createdDate);
                     $('.lockersName').text(data.locker.name + " --- " + data.locker.code);
+                    $('.cabinetName').text(data.locker.cabinet.nameCabinet);
                     $('.userName').text(data.user.fullName);
                     $('.username').text(data.createdBy);
 
