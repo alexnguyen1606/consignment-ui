@@ -34,7 +34,7 @@
                         <img class="img-circle avatar" style="width:80px;height: 80px "  src="">
 
                         <p  class=" menu-item ">
-                           <span class="fullName" ></span>
+                           <span class="fullName3" ></span>
                             <img src="/admin/image/FrameInfo.svg" class="ml-1">
                         </p>
                     </a>

@@ -49,7 +49,7 @@ jQuery(function ($) {
                 row += "<td>" + v.customer.fullName + "</td>";
                 row += "<td>" + type + "</td>";
                 row += "<td>" + createdDate + "</td>";
-                row += "<td>" + v.locker.name + " --- " + v.locker.code + "</td>";
+                row += "<td>" + v.locker.cabinet.nameCabinet + "</td>";
                 row += '<td><div class="btn-detail text-center" data-id="' + v.id + '" data-toggle="modal" data-target="#modalLogging"><a >Chi tiết</a></div></td>';
                 row += "</tr>";
             });
